@@ -211,6 +211,27 @@ h1 {
     margin: 4px;
 }
 
+.badge-experience {
+    background: #1A52FD;
+    font-size: 1.2rem; /* Większy tekst */
+    padding: 12px !important;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
 /* Stylizacja sekcji stopki */
 .footer-section {
     width: 100%; /* Pełna szerokość */
@@ -225,18 +246,15 @@ h1 {
     padding-bottom: 40px;
 }
 
-/* Styl PARALLAX 1 */
+/* Parallax 1 */
 .parallax {
-  /* The image used */
   background-image: url("ParallaxProblems.png");
   margin-bottom: 16px;
   margin-top: 16px;
-  /* Set a specific height */
-  min-height: 480px;
+  min-height: 540px;
   width: 100%;
   position: relative;
-  overflow: hidden; /* Dodaj overflow, aby ukryć ewentualne przepełnienia */
-  /* Create the parallax scrolling effect */
+  overflow: hidden;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -254,31 +272,21 @@ h1 {
 }
 
 @media (max-width: 992px) {
-  .parallax::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background: linear-gradient(135deg, #FFC700, #FFA500);
+  .parallax {
+    background-attachment: scroll;
+    background-image: url("MobileParallaxProblems.png"); /* Zmien obrazek na mobilny */
   }
-  .parallax { background-size: cover; }
 }
 
-/* Styl PARALLAX 2 */
+/* Parallax 2 */
 .parallax2 {
-  /* The image used */
   background-image: url("ParallaxSolutions.png");
   margin-bottom: 16px;
   margin-top: 16px;
-  /* Set a specific height */
-  min-height: 480px;
+  min-height: 540px;
   width: 100%;
   position: relative;
-  overflow: hidden; /* Dodaj overflow, aby ukryć ewentualne przepełnienia */
-  /* Create the parallax scrolling effect */
+  overflow: hidden;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -296,31 +304,21 @@ h1 {
 }
 
 @media (max-width: 992px) {
-  .parallax2::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background: linear-gradient(135deg, #FFC700, #FFA500);
+  .parallax2 {
+    background-attachment: scroll;
+    background-image: url("MobileParallaxSolutions.png"); /* Zmien obrazek na mobilny */
   }
-  .parallax2 { background-size: cover; }
 }
 
-/* Styl PARALLAX 3 */
+/* Parallax 3 */
 .parallax3 {
-  /* The image used */
-  background-image: url(ParallaxNoBg.png);
+  background-image: url("ParallaxNoBg.png");
   margin-bottom: 16px;
   margin-top: 16px;
-  /* Set a specific height */
-  min-height: 480px;
+  min-height: 800px;
   width: 100%;
   position: relative;
-  overflow: hidden; /* Dodaj overflow, aby ukryć ewentualne przepełnienia */
-  /* Create the parallax scrolling effect */
+  overflow: hidden;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -338,20 +336,14 @@ h1 {
 }
 
 @media (max-width: 992px) {
-  .parallax3::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background: linear-gradient(135deg, #FFC700, #FFA500);
+  .parallax3 {
+    min-height: 540px;
+    background-attachment: scroll;
+    background-image: url("MobileParallaxNoBg.png"); /* Zmien obrazek na mobilny */
   }
-  .parallax3 { background-size: cover; }
 }
 
-/* Styl PARALLAX 4 */
+/* Parallax 4 */
 .parallax4 {
   margin-bottom: 16px;
   margin-top: 16px;
@@ -376,18 +368,12 @@ h1 {
 }
 
 @media (max-width: 992px) {
-  .parallax4::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background: linear-gradient(135deg, #FFC700, #FFA500);
+  .parallax4 {
+    background-attachment: scroll;
+    background-image: url("MobileParallax4.png"); /* Zmien obrazek na mobilny */
   }
-  .parallax4 { background-size: cover; }
 }
+
 
 /* Dodaj poniższy kod w swoim arkuszu stylów CSS */
 .confetti {
@@ -564,4 +550,19 @@ h1 {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   z-index: 9999;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.avatar img{
+    width: 152px; /* Ustaw szerokość obrazka na 100% szerokości kontenera */
+    height: auto;
+    max-width: 300px; /* Ustaw maksymalną szerokość obrazka */
+    border-radius: 50%; /* Zaokrąglij obrazek */
+    border: solid 4px;
+    border-color: #fff;
 }
