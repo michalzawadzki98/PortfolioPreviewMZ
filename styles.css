@@ -345,6 +345,7 @@ h1 {
   }
 }
 
+
 /* Parallax 4 */
 .parallax4 {
   margin-bottom: 16px;
@@ -567,4 +568,39 @@ h1 {
     border-radius: 50%; /* Zaokrąglij obrazek */
     border: solid 4px;
     border-color: #fff;
+}
+
+/* DUUUUUUUUUUUUUUCK */
+.duck-container {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.duck-img {
+    width: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    animation: swing 3s infinite ease-in-out; /* Zmieniono funkcję timingu */
+    animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+}
+
+
+@keyframes swing {
+    0% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+
+
+.modal-duck-img {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s;
 }
