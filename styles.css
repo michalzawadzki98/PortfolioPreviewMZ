@@ -340,6 +340,8 @@ h1 {
     min-height: 540px;
     background-attachment: scroll;
     background-image: url("MobileParallaxNoBg.png"); /* Zmien obrazek na mobilny */
+    background-size: 100%; /* Dopasowanie obrazu do szerokości kontenera */
+    margin: 0 auto; /* Wycentrowanie obrazu */
   }
 }
 
