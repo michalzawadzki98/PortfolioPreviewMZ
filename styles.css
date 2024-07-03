@@ -194,6 +194,10 @@ h1 {
     font-size: 1.25rem;
   }
 
+  .list-item li {
+    margin-bottom: 8px;
+  }
+
 
 .badges {
     padding-bottom: 16px;
@@ -603,4 +607,42 @@ h1 {
     width: 200px;
     cursor: pointer;
     transition: transform 0.3s;
+}
+
+/* EXPERIENCE */
+
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  background-color: #ffc107;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  margin-right: 16px;
+  font-size: 24px;
+}
+
+.experience-details {
+  flex: 1;
+}
+
+.experience-details h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.experience-details p {
+  margin: 0.2rem 0;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #6c757d;
 }
