@@ -264,7 +264,7 @@ h1 {
 
 /* Parallax 1 */
 .parallax {
-  background-image: url("/IMG/CS-ASSISTANT/ParallaxProblems.png");
+  background-image: url("IMG/CS-ASSISTANT/ParallaxProblems.png");
   margin-bottom: 16px;
   margin-top: 16px;
   min-height: 600px;
@@ -290,13 +290,13 @@ h1 {
 @media (max-width: 992px) {
   .parallax {
     background-attachment: scroll;
-    background-image: url("/IMG/CS-ASSISTANT/MobileParallaxProblems.png"); /* Zmien obrazek na mobilny */
+    background-image: url("IMG/CS-ASSISTANT/MobileParallaxProblems.png"); /* Zmien obrazek na mobilny */
   }
 }
 
 /* Parallax 2 */
 .parallax2 {
-  background-image: url("/IMG/CS-ASSISTANT/ParallaxSolutions.png");
+  background-image: url("IMG/CS-ASSISTANT/ParallaxSolutions.png");
   margin-bottom: 16px;
   margin-top: 16px;
   min-height: 600px;
@@ -322,13 +322,13 @@ h1 {
 @media (max-width: 992px) {
   .parallax2 {
     background-attachment: scroll;
-    background-image: url("/IMG/CS-ASSISTANT/MobileParallaxSolutions.png"); /* Zmien obrazek na mobilny */
+    background-image: url("IMG/CS-ASSISTANT/MobileParallaxSolutions.png"); /* Zmien obrazek na mobilny */
   }
 }
 
 /* Parallax 3 */
 .parallax3 {
-  background-image: url("/IMG/CS-ASSISTANT/ParallaxNoBg.png");
+  background-image: url("IMG/CS-ASSISTANT/ParallaxNoBg.png");
   margin-bottom: 16px;
   margin-top: 16px;
   min-height: 880px;
@@ -355,7 +355,7 @@ h1 {
   .parallax3 {
     min-height: 540px;
     background-attachment: scroll;
-    background-image: url("/IMG/CS-ASSISTANT/MobileParallaxNoBg.png"); /* Zmien obrazek na mobilny */
+    background-image: url("IMG/CS-ASSISTANT/MobileParallaxNoBg.png"); /* Zmien obrazek na mobilny */
     background-size: 100%; /* Dopasowanie obrazu do szerokości kontenera */
     margin: 0 auto; /* Wycentrowanie obrazu */
   }
@@ -389,7 +389,7 @@ h1 {
 @media (max-width: 992px) {
   .parallax4 {
     background-attachment: scroll;
-    background-image: url("/IMG/CS-ASSISTANT/MobileParallax4.png"); /* Zmien obrazek na mobilny */
+    background-image: url("IMG/CS-ASSISTANT/MobileParallax4.png"); /* Zmien obrazek na mobilny */
   }
 }
 
